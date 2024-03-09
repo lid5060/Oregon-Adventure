@@ -1,12 +1,8 @@
-# health_stat = 100
-# water_stat = 100
-# food_stat = 100
-
-# print(health_stat)
-# print(water_stat)
-# print(food_stat)
-
-health_stat = int(input())
-print(health_stat)
-
-# remove intput and printing of the health stat purely for testing at the moment
+import random
+start_health_stat = random.randint(10, 100)
+start_water_stat = random.randint(10, 100)
+start_food_stat = random.randint(10, 100)
+def some_function():
+    print()
+if __name__ == "__main__":
+    print()
