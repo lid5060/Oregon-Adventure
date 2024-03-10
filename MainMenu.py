@@ -1,12 +1,19 @@
 while True:
     try:
-        print("enter a number")
+        print("Development menu")
+        print("enter a number between 1 - 10 to jump between worlds")
         menu = int(input())
         if menu == 1:
-            print("Menu1")
-            exec(open('Menu1.py').read())
+            print("World 1")
+            exec(open('World1.py').read())
         elif menu == 2:
-            print("Menu2")
+            print("World 2")
+        elif menu ==3:
+            print()
+        elif menu ==4:
+            print()
+        elif menu == 5:
+            print()
         elif menu == 0:
             break
     except Exception:
