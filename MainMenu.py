@@ -14,6 +14,16 @@ while True:
             print()
         elif menu == 5:
             print()
+        elif menu == 6:
+            print()
+        elif menu == 7:
+            print()
+        elif menu == 8:
+            print()
+        elif menu == 9:
+            print()
+        elif menu == 10:
+            print()
         elif menu == 0:
             break
     except Exception:
