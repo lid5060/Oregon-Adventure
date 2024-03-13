@@ -1,29 +1,40 @@
+from World3 import test
 while True:
     try:
-        print("Development menu")
-        print("enter a number between 1 - 10 to jump between worlds")
+        print("Development menu remove after testing")
+        print("enter a number between 1 - 10 to jump between worlds or 0 to exit")
         menu = int(input())
         if menu == 1:
             print("World 1")
             exec(open('World1.py').read())
         elif menu == 2:
             print("World 2")
+            exec(open('World2.py').read())
         elif menu ==3:
-            print()
+            print("World 3")
+            print(test)
         elif menu ==4:
+            print("World 4")
+            exec(open('World4.py').read())
             print()
         elif menu == 5:
-            print()
+            print("World 5")
+            exec(open('World5.py').read())
         elif menu == 6:
-            print()
+            print("World 6")
+            exec(open('World6.py').read())
         elif menu == 7:
-            print()
+            print("World 7")
+            exec(open('World7.py').read())
         elif menu == 8:
-            print()
+            print("World 8")
+            exec(open('World8.py').read())
         elif menu == 9:
-            print()
+            print("World 9")
+            exec(open('World9.py').read())
         elif menu == 10:
-            print()
+            print("World 10")
+            exec(open('World10.py').read())
         elif menu == 0:
             break
     except Exception:
