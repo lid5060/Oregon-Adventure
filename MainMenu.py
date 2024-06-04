@@ -1,4 +1,4 @@
-from World3 import test
+import time
 while True:
     try:
         print("Development menu remove after testing")
@@ -12,11 +12,10 @@ while True:
             exec(open('World2.py').read())
         elif menu ==3:
             print("World 3")
-            print(test)
+            exec(open('World3.py').read())
         elif menu ==4:
             print("World 4")
             exec(open('World4.py').read())
-            print()
         elif menu == 5:
             print("World 5")
             exec(open('World5.py').read())
@@ -36,6 +35,8 @@ while True:
             print("World 10")
             exec(open('World10.py').read())
         elif menu == 0:
+            print("Exiting")
+            time.sleep(5)
             break
     except Exception:
         print("Error")

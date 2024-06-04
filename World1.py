@@ -5,6 +5,17 @@ from Stats import start_food_stat
 print("Your health is", start_health_stat)
 print("Your water is", start_water_stat)
 print("Your food is", start_food_stat)
+
+if start_health_stat <= 0:
+    print("You have died due to no health")
+    exec(open('MainMenu.py').read())
+if start_water_stat <= 0:
+    print("You have died due to no water")
+    exec(open('MainMenu.py').read())
+if start_food_stat <= 0:
+    print("You have died due to no food")
+    exec(open('MainMenu.py').read())
+
 # allowing the user to go home is only for development comment out or remove when completed
 print("enter 0 to go home")
 menu = int(input())
