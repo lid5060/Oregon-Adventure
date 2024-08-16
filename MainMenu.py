@@ -36,7 +36,7 @@ while True:
             exec(open('World10.py').read())
         elif menu == 0:
             print("Exiting")
-            time.sleep(5)
+            time.sleep(3)
             break
     except Exception:
         print("Error")
