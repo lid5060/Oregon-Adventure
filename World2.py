@@ -1,18 +1,21 @@
-from Stats import second_health_stat
-from Stats import second_water_stat
-from Stats import second_food_stat
+from random import random
+from World1 import health, water, food
 
-print("Your health is", second_health_stat)
-print("Your water is", second_water_stat)
-print("Your food is", second_food_stat)
+health = health - random.randint(1, 10)
+water = water - random.randint(1, 10)
+food = food - random.randint(1, 10)
 
-if second_health_stat <= 0:
+print("Your health is", health)
+print("Your water is", water)
+print("Your food is", food)
+
+if health <= 0:
     print("You have died")
     exec(open('MainMenu.py').read())
-if second_water_stat <= 0:
+if water <= 0:
     print("You have died")
     exec(open('MainMenu.py').read())
-if second_food_stat <= 0:
+if food <= 0:
     print("You have died")
     exec(open('MainMenu.py').read())
 
